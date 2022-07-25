@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Circle-icons-calculator.svg/512px-Circle-icons-calculator.svg.png">
+    <link rel="stylesheet" href="/Codes/CSS/main.css">
+    <title>FCAI GPA Calculator</title>
+</head>
+
+<body>
+    <div class="px-2">
+        <div class="row m-1 py-3">
+            <div class="col">
+                <div class="p-1 h1 text-light text-center mx-auto display-inline-block my-font fw-bold">
+                    <h1 class="fw-bold">FCAI GPA Calculator</h1>
+                    <p class="fs-6 neon mb-0"><span class="text-danger">Note: </span>Wrong Grade will lead to wrong Results. So, Grade Must Be One of Those<span class="text-success">(A+, A, B+, B, C+, C, D+, D, or F)</span>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container m-5 mt-0 p-2 rounded mx-auto my-shadow bg-customI">
+            
+            <div class="row m-1 p-3">
+                <div class="col col-md-11 mx-auto">
+                    <div
+                        class="row rounded p-2">
+                        <div class="col add-subject-wrapper d-flex justify-content-between my-font align-items-center">
+                            <input class="form-control form-control-lg my-border bg-customII border-0 rounded text-light me-lg-2 my-shadow"
+                                name='subject' type="text" placeholder="Course">
+                            <input class="form-control form-control-lg my-border bg-customII border-0 rounded text-light m-2 my-shadow"
+                                name='hour' type="number" placeholder="Hour">
+                            <input class="form-control form-control-lg my-border bg-customII border-0 rounded text-light m-2 my-shadow"
+                                name='grade' type="text" placeholder="Grade">
+                            <button id="add" class="btn btn-warning fw-bold ms-2 my-shadow my-border">Add</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="row m-1 p-3">
+                <div class="col col-11 mx-auto">
+                    <div
+                        class="row rounded p-2 align-items-center justify-content-center">
+                        
+                        <div class="col">
+                            
+                            <div class="my-border my-font my-shadow text-light student-data d-flex justify-content-between bg-custom rounded-3 p-3 my-3">
+                                <div class="text border-end p-2">
+                                    <h1>Courses: <span id="subjs"></span></span>
+                                </div>
+                                <div class="text border-end p-2">
+                                    <h1>Total Hours: <span id="hrs"></span></span>
+                                </div>
+                                <div class="text border-end p-2">
+                                    <h1>GPA: <span id="gpa"></span></span>
+                                </div>
+                                <div class="text p-2">
+                                    <h1>Passed Hours: <span id="passed"></span></span>
+                                </div>
+                            </div>
+                            <div class="table-wrapper w-100">
+                                <table class="fl-table rounded-3">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-custom">Course</th>
+                                            <th class="bg-warning text-dark">Hour</th>
+                                            <th class="bg-custom">Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="subjsTable">
+    
+                                    <tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+    
+        </div>
+    </div>
+    <footer class="bg-customI text-center text-lg-start w-100">
+        <div class="text-light text-center p-1 my-font">
+          ©2022 Copyright
+          <a class="text-light text-decoration-none fw-bold" href="https://wa.me/01102660870?text=">Adam Hasan</a>
+          <a class="text-light text-decoration-none fw-bold" href="#">- Mostafa Saad</a>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/Codes/JavaScript/main.js"></script>
+</body>
+
+</html>
